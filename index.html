@@ -1,184 +1,43 @@
 <html>
- <head>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="assets/css/academicons/css/academicons.min.css" rel="stylesheet">
-  <script defer src="assets/css/fontawesome/js/all.min.js"></script>
- </head>
- <body class="" >
-  <table style="width: 1100px; margin-left:auto; margin-right:auto;font-size: 22px;">
-    <tr>
-      <td style="vertical-align:top">
-        <div class="sidebar">
-          <img src="assets/headshot.jpg" class="portrait"/>
-          <h3 class="name">Nicolas Menand</h3>
-          <p class="position"> PhD Student </br> <a href="https://theory.cis.upenn.edu/" target="_blank"  class="link">University of Pennsylvania <a><p>
-          <p class="contact"> nmenand@seas.upenn.edu </p>  
-          <p class="icon-bar"> 
-            <a href='https://scholar.google.com/citations?user=Mi3fi78AAAAJ&hl=en' target="_blank" class="icon-link">
-              <i class="ai ai-google-scholar fa-2x icon-link"></i>
-            </a>
-          <!--
-            <a class="icon-link">
-              <i class="ai ai-dblp fa-2x wip-link" title="WIP"></i>
-            </a>
-          -->
-            <a href='https://github.com/nmenand/' target="_blank" class="icon-link">
-              <i class="fa-brands fa-github fa-2x icon-link"></i>
-            </a>
-            <a href='https://www.linkedin.com/in/nicolas-menand-6138a015a/' target="_blank" class="icon-link">
-              <i class="fa-brands fa-linkedin fa-2x icon-link"></i>
-            </a>
-          <p>
-        </div>
-      </td>
+  <head>
+    <link rel="stylesheet", href="index.css">
+    <title>Nicolas Menand</title>
+  </head>
+  <body>
+<h1 style="margin-top: 3em;">Nicolas Menand</h1>
+<div>
+  <img src="assets/headshot.jpg" class="img-right">
+</div>
+<p> <strong> Email: </strong>nmenand [at] seas.upenn.edu
+</p>
+<p>
+  I am a third year PhD student at the University of Pennsylvania, where I have the fortune of being advised by Erik Waingarten. 
+  I graduated from UC Santa Cruz with a Master's and Bachelor's in Computer Science and a Bachelor's in Mathematics, where I was advised by C. Seshadhri.
+  <br> <br>
+  My research has been graciously supported by <a href="https://asset.seas.upenn.edu/the-asset-center-advances-trustworthy-ai-with-support-from-aws/">AWS AI</a>. 
+</p>
+<h2> Publications <small>[<a href="https://scholar.google.com/citations?user=Mi3fi78AAAAJ&hl=en">google scholar</a>]</small></h2>
 
-      <td style="padding-left: 10px;">
-        <div class='info'>
-          <h3 style="display: flex; justify-content: space-between;">
-            <span class="header">About</span>
-            <button onclick="darkMode()" class="theme-toggle">
-              <i class="far fa-lightbulb-slash fa-2x toggle-on"></i>
-              <i class="fas fa-lightbulb-on fa-2x toggle-off"></i>
-            </button>
-          </h3>
-          <p class="top large"> 
-            I am a first year PhD student at the University of Pennsylvania, where I have the fortune of being advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="link">
-            Erik Waingarten</a>. I graduated from UC Santa Cruz with a Master's and Bachelor's in Computer Science and a Bachelor's in Mathematics, where I was advised by <a href="https://users.soe.ucsc.edu/~sesh/" target="_blank" class="link">
-            C. Seshadhri</a> with whom I researched the properties of low-dimensional graph embeddings.
-          </p>
-          <p class="large "> 
-            My research interests lie mostly in theoretical computer science.  </p>
-        </div>
+<ul class="no-bullets">
+        </li><li><strong>Streaming and Massively Parallel Algorithms for
+Euclidean Max-Cut</strong><br>
+            Nicolas Menand, Erik Waingarten<br>
+	    SODA 2026 [<a href="https://arxiv.org/abs/2503.14362">arXiv</a>]
 
-        <div class='education'>
-          <h3 class="header"> Education </h3>
-          <img src="assets/icons/sheild.svg" class="sheild-icon"/>
-          <p class="large top"> PhD in Computer and Information Science, </br> University of Pennsylvania, 2023 - Present <p>
-            <ul class="list-edu">
-              <li> Advisor: Erik Waingarten </li>
-            </ul>
-          <img src="assets/icons/slug.png" class="slug-icon"/>
-          <p class="large"> M.S. in Computer Science and Engineering, </br> University of California, Santa Cruz, 2021 - 2022 <p>
-            <ul class="list-edu">
-              <li> M.S. Advisor: C. Seshadhri </li>
-            </ul>
-          <img src="assets/icons/slug.png" class="slug-icon"/>
-          <p class="large"> B.S. in Computer Science & B.S. in Mathematics, </br> University of California, Santa Cruz, 2017 - 2021<p>
-          <ul class="list-edu">
-            <li> Senior Thesis (Computer Science): Knowledge Graph Embeddings in Probablistic Soft Logic </li>
-            <li> Senior Paper (Mathematics): Graph Coloring and Ramsey Theory </li>
-          </ul>
-        </div>
+  <li><strong>Average-Distortion Sketching</strong><br>
+            Yiqiao Bao, Anubhav Baweja, Nicolas Menand, Erik Waingarten, Nathan White, Tian Zhang<br>
+	   FOCS 2025 [<a href="https://arxiv.org/abs/2411.05156">arXiv</a>]
 
-        <div class='publication'>
-          <h3 class="header"> Publications </h3>
-          <dl class="top large">
-            <dt class="title"> Link Prediction using Low-dimensional node embeddings: the measurement problem </dt>
-            <dt class="author"> Nicolas Menand and C. Seshadhri </dt>
-            <dt class="venue"> PNAS 2024</dt>
-            <dt>
-              <button id='paper-button' class="text-button" onclick="toggleAbstract('paper')"> 
-                 Abstract <i class="fas fa-arrow-down"></i>
-              </button>
-              <!--
-                <a class="text-button" href="" target="_blank"> ArXiv <i class="ai ai-arxiv"></i> </a>
-              -->
-              <a class="text-button" href="https://www.pnas.org/doi/epdf/10.1073/pnas.2312527121" target="_blank"> PDF <i class="fas fa-file-text"></i> </a>
-              <a class="text-button" href="https://www.github.com/nmenand/link-prediction-experiments" target="_blank"> Code <i class="fas fa-file-code"></i> </a>
-            </dt>
-            <dt class="abstract" id="paper">
-              <div> 
-                Graph representation learning is a fundamental technique for machine learning (ML) on complex networks.
-                Given an input network, these methods represent the vertices by low-dimensional real-valued vectors.
-                These vectors can be used for a multitude of downstream ML tasks. We study one of the most important such task, link prediction.
-                Much of the recent literature on graph representation learning has shown remarkable success in link prediction.
-                On closer investigation, we observe that the performance is measured by the AUC (area under the curve), which suffers biases.
-                Since the ground truth in link prediction is sparse, we design a vertex-centric measure of performance, called the VCMPR@k plots.
-                Under this measure, we show that link predictors using graph representations show poor scores.
-                Despite having extremely high AUC scores, the predictors miss much of the ground truth
-                We identify a mathematical connection between this performance, the sparsity of the ground truth, and the low-dimensional geometry of the node embeddings.
-                Under a formal theoretical framework, we prove that low-dimensional vectors cannot capture sparse ground truth using dot product similarities (the standard practice in the literature).
-                Our results call into question existing results on link prediction and pose a significant scientific challenge for graph representation learning.
-                The VCMPR plots identify specific scientific challenges for link prediction using low-dimensional node embeddings.
-              </div>
-            </dt>
-          </dl>
-        </div>
-
-        <div class='teaching'>
-          <h3 class="header"> Teaching </h3>  
-          <ul class="top large">
-            <li > Teaching Assistant, <a href="https://www.seas.upenn.edu/~cis3200/24sp/" target="_blank" class="link"> Introduction to Algorithms </a>, (Penn) Spring 2024 </li>
-            <li > Teaching Assistant, <a href="https://classes.soe.ucsc.edu/cse016/Winter22/" target="_blank" class="link"> Applied Discrete Mathematics</a>,  (UCSC) Winter 2022 </li>
-            <li > Teaching Assistant, <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2021/CSE101/" target="_blank" class="link"> Intro to Data Structures and Algorithms</a>, (UCSC) Fall 2021 </li>
-            <li > Course Tutor, <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE101-fall/" target="_blank" class="link"> Intro to Data Structures and Algorithms</a>, (UCSC) Fall 2020 </li>
-          </ul>      
-        </div>
-
-        <div class='other'>
-          <h3 class="header"> Other </h3>
-          <div class='top'>
-            <h5> Service </h5>
-            <p class="top large service">
-            Reviewing: ESA 2024
-            </p>   
-          </div>
-        <!--
-          <div class='awards top'>
-            <h5> Honors & Awards </h5>
-            <ul class="top large">
-              <li> Highest Honors in the Major (Computer Science), UC Santa Cruz, 2021 </li>
-              <li> Highest Honors in the Major (Mathematics), UC Santa Cruz, 2021 </li>
-              <li> University Honors, UC Santa Cruz, 2021 </li> 
-          </div>
-          <div class='industry'>
-            <h5> Industry Experience </h5>
-            <img src="assets/icons/meta.svg" class="logo top"/> <p class="top large">Software Engineer, Meta, <br/> December 2022 &#128546;</p>
-            <div class="amz-logo"></div> <p class="large">Software Development Engineer Intern, Amazon, <br/> June 2022 - August 2022</p>
-            <div class="amz-logo"></div> <p class="large">Software Development Engineer Intern, Amazon, <br/> June 2021 - August 2021</p>
-            <div class="amz-logo"></div> <p class="large">Software Development Engineer Intern, Amazon, <br/> June 2020 - August 2020</p>
-          </div>
-        -->
-          <div class='scribe'>
-          <h5> Some Notes </h5>
-           <ul class="top large">
-             <li> CSE290A: Randomized Algorithms
-               <ul>
-                 <li> <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE290A/Slides/Lecture9.pdf" target="_blank" class="link"> Lecture 9: The Chernoff Bound and Moment Generating
-                   Functions </a> </li>
-                 <li> <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE290A/Slides/Lecture18.pdf" target="_blank" class="link"> Lecture 18 Follow the Perturbed Leader </a> </li>
-               </ul>
-             </li> 
-           </ul>    
-          </div>
-        </div>
-        <script>
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          var element = document.body;
-          element.classList.toggle("dark-mode");
-        }
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-          var element = document.body;
-          element.classList.toggle("dark-mode");
-        });
-        function darkMode() {
-          var element = document.body;
-          element.classList.toggle("dark-mode");
-        }
-        function toggleAbstract(title) {
-          var element = document.getElementById(title);
-          var button = document.getElementById(title+"-button");
-          if (element.style.display == "block") {
-            element.style.display = "none";
-            button.innerHTML =   'Abstract ' + '<i class="fas fa-arrow-down">' + '</i>';
-          } else {
-            element.style.display = "block";
-            button.innerHTML = 'Abstract ' + '<i class="fas fa-arrow-up">' + '</i>';
-          }
-        }
-        </script>
-      </td>
-    </tr>
-  </table>
-  </body>
-</html>
+        </li><li><strong>Link Prediction using Low-dimensional node embeddings: the measurement problem</strong><br>
+            Nicolas Menand, C. Seshadhri<br>
+            PNAS 2024 [<a href="https://www.pnas.org/doi/10.1073/pnas.2312527121">PDF</a>]
+    </li>
+    </ul>
+<h2> Teaching </h2>
+<ul>
+    </li><li>Teaching Assistant, CIS 3200: Introduction to Algorithms (Spring 2024) at Penn. Instructor: Erik Waingarten. </li>
+    </li><li>Teaching Assistant, CSE 16 Applied Discrete Mathematics (Winter 2022) at UCSC Instructor: Patrick Tantalo. </li>
+    </li><li>Teaching Assistant, CSE 101 Intro to Data Structures and Algorithms (Fall 2021) at UCSC. Instructor: C. Seshadhri. </li>
+    </li><li>Course Tutor, CSE 101 Intro to Data Structures and Algorithms (Fall 2020) at UCSC. Instructor: C. Seshadhri. </li>
+  </ul>  </body>
+  </html>
